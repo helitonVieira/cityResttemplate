@@ -5,6 +5,7 @@ import java.util.List;
 public class CategoriesDto {
 	
 	private String title;
+	private long count;
 	private List<FaixasDto> faixas;
 
 	public String getTitle() {
@@ -22,5 +23,12 @@ public class CategoriesDto {
 	public void setFaixas(List<FaixasDto> faixas) {
 		this.faixas = faixas;
 	}
+	
+	public long getCount() {
+		return count;
+	}
 
+	public void setCount(long count) {
+		this.count = count;
+	}
 }
