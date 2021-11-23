@@ -28,12 +28,12 @@ public class SwaggerConfig {
     private ApiInfo getApiInfo() {
     	return new ApiInfo(
     		"Restfull API with Spring Boot 2.5.2",
-      		"Investment Products information for OpenBank",
+      		"",
       		"v1.0.0",
-      		"Termos de serviço url",
+      		"",
       		new Contact("TO Brasil","domínio", "https://to-brasil.com/"),
-      		"licença API",
-      		"Licença URL",
+      		"",
+      		"",
       		Collections.emptyList()
       	);
     }
