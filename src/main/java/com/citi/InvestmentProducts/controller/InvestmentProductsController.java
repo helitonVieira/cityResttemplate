@@ -42,7 +42,7 @@ public class InvestmentProductsController {
 
 		OpenBankingSucessDto openBankingSucessDto = objectResponseDotNetDto.converterOpenBankingSucessDto(
 			new OpenBankingLinkDto(request.getRequestURL().toString()),
-			new OpenBankingMetaDto((int) objectResponseDotNetDto.getTotalRecords(), 1)
+			new OpenBankingMetaDto(true,(int) objectResponseDotNetDto.getTotalRecords())
 		);
 
 		if (objectResponseDotNetDto.getData() == null) {

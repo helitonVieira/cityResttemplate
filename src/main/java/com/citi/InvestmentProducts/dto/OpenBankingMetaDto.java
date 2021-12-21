@@ -2,14 +2,22 @@ package com.citi.InvestmentProducts.dto;
 
 public class OpenBankingMetaDto {
 
+	private Boolean success;
 	private Integer totalRecords;
-	private Integer totalPages;
 	
-	public OpenBankingMetaDto(Integer totalRecords, Integer totalPages) {
-		this.totalRecords = totalRecords;
-		this.totalPages = totalPages;
+	public OpenBankingMetaDto(Boolean success, Integer totalRecords) {
+		this.success = success;
+		this.totalRecords = totalRecords;		
 	}
 
+	public Boolean getSuccess() {
+		return success;
+	}
+
+	public void setSuccess(Boolean success) {
+		this.success = success;
+	}
+	
 	public Integer getTotalRecords() {
 		return totalRecords;
 	}
@@ -17,13 +25,5 @@ public class OpenBankingMetaDto {
 	public void setTotalRecords(Integer totalRecords) {
 		this.totalRecords = totalRecords;
 	}
-
-	public Integer getTotalPages() {
-		return totalPages;
-	}
-
-	public void setTotalPages(Integer totalPages) {
-		this.totalPages = totalPages;
-	}
-
+	
 }
